@@ -24,7 +24,7 @@ The system follows a modular microservices-lite architecture:
     - **Task Service**: Runs background jobs for session summarization.
 4.  **Data Layer**: Supabase acts as the persistent store for chat logs and session states.
 
-### Mermaid Diagrams
+### System Diagrams
 
 #### Class Diagram
 
@@ -60,7 +60,7 @@ classDiagram
 
 
 
-![Class Diagram](Diagrams/class-diagram.png)
+
 
 #### Sequence Diagram (Message Flow)
 
@@ -85,7 +85,7 @@ sequenceDiagram
     C-->>U: Render Markdown & Highlight
     S->>D: Log Assistant Message (Async)
 ```
-![Sequence Diagram](Diagrams/Sequence-diagram.png)
+
 
 #### Activity Diagram (Session Lifecycle)
 
@@ -101,7 +101,7 @@ stateDiagram-v2
     BackgroundTask --> Summarizing : Analyze Logs
     Summarizing --> [*] : Update DB Summary
 ```
-![Activity Diagram](Diagrams/Activity_diagram.png)
+
 
 ## Functional Requirements
 
